@@ -15,9 +15,14 @@ body {
   text-shadow: 0 0 10px #58a6ff;
 }
 
+.ram-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .hero {
   background: linear-gradient(135deg, #0a0f14, #111b27);
-  padding: 140px 20px;
+  padding: 190px 20px;
   background-attachment: fixed;
 }
 
@@ -28,10 +33,6 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
-}
 
 .btn-primary {
   background: #238636;
@@ -43,6 +44,32 @@ body {
 .btn-primary:hover {
   background: #2ea043;
   box-shadow: 0 0 10px #2ea043;
+}
+
+.qr-code {
+  width: 220px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+.qr-trigger:hover + a .qr-code {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.qr-trigger {
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.qr-trigger:hover {
+  color: #0d6efd;
 }
 
 .project-card {
@@ -100,22 +127,12 @@ body {
   color: #58a6ff;
 }
 
-footer {
+.footer {
   background: #0a0f14;
   color: #8b949e;
   border-top: 1px solid #30363d;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.6s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .skill-card {
   background: #161b22;
@@ -154,5 +171,4 @@ footer {
 
 .skill-card:hover .skill-level {
   bottom: 0;
-
 }
