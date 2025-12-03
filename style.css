@@ -27,7 +27,7 @@ body {
 }
 
 .profile-img {
-  width: 180px;
+  width: 150px;
   border-radius: 50%;
   box-shadow: 0 0 20px #58a6ff;
   animation: fadeIn 2s ease-in-out;
@@ -172,3 +172,4 @@ body {
 .skill-card:hover .skill-level {
   bottom: 0;
 }
+
