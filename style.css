@@ -27,6 +27,7 @@ body {
 }
 
 .profile-img {
+  height: 150px
   width: 150px;
   border-radius: 50%;
   box-shadow: 0 0 20px #58a6ff;
@@ -172,4 +173,5 @@ body {
 .skill-card:hover .skill-level {
   bottom: 0;
 }
+
 
